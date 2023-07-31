@@ -12,8 +12,8 @@ export function sortTodos(todos: Todo[]): Todo[] {
         console.warn('completedAt should be defined...')
         return 0
       }
-      // The completed todos should be sorted by completedAt ascending
-      return a.completedAt.getTime() > b.completedAt.getTime() ? 1 : -1
+      // The completed todos should be sorted by completedAt descending
+      return a.completedAt.getTime() > b.completedAt.getTime() ? -1 : 1
     }
     if (!a.createdAt || !b.createdAt) {
       console.warn('createdAt should be defined...')
