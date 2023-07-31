@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
-    "lint": "prettier --check .",
-    "lint:fix": "prettier --write .",
+    "lint": "prettier . --check",
+    "lint:fix": "prettier . --write",
     "test": "vitest run",
     "test:watch": "vitest"
   },
